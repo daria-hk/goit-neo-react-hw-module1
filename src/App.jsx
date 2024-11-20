@@ -1,8 +1,8 @@
-import Profile from './components/Profile/Profile'
-import FriendList from './components/FriendList/FriendList'
-import TransactionHistory from './components/TransactionHistory/TransactionHistory'
+import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
-import './App.css'
+import "./App.css";
 import userData from "./userData.json";
 import friends from "./friends.json";
 import transactions from "./transactions.json";
@@ -23,4 +23,4 @@ const App = () => {
   );
 };
 
-export default App
+export default App;
