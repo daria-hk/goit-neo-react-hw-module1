@@ -1,14 +1,16 @@
-import css from './FriendList.module.css'
+import css from './FriendList.module.css';
+import clsx from "clsx";
 
 const FriendList = ({ friends }) => {
 	return (
-        <ul>
+        <ul className={css.friendsList}>
             {friends.map((friend) => {
-                return <li key={friend.id}>
+                return <li key={friend.id} className={css.friendItem}>
                     <div>
-                        <img src={friend.avatar} alt="Avatar" width="48" />
+                        <img src={friend.avatar}  alt={`${friend.name}-avatar`} width="48" />
                         <p>{friend.name}</p>
-                        <p>{friend.isOnline}</p>
+                        <p className={clsx(friend.isOnline ? css.online : css.offline)}>
+                            {friend.isOnline ? "Online" : "Offline"}</p>
                     </div>
                 </li>;
             })}

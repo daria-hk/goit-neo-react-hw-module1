@@ -1,4 +1,5 @@
-import css from './TransactionHistory.module.css'
+import css from './TransactionHistory.module.css';
+import clsx from "clsx";
 
 const TransactionHistory = ({ items }) => {
 	return (
@@ -19,7 +20,7 @@ const TransactionHistory = ({ items }) => {
                             </tr>
                         </tbody>        
             })}
-         </table>
+        </table>
    );
 }
 
