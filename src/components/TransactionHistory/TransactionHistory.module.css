@@ -31,3 +31,9 @@
 .tbodyBackground:nth-child(odd) {
   background: lightgray;
 }
+
+.blackBackground {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
