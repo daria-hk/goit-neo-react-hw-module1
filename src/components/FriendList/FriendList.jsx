@@ -5,7 +5,7 @@ const FriendList = ({ friends }) => {
         <ul>
             {friends.map((friend) => {
                 return <li>
-                    <div>
+                    <div  key={friend.id}>
                         <img src={friend.avatar} alt="Avatar" width="48" />
                         <p>{friend.name}</p>
                         <p>{friend.isOnline}</p>
