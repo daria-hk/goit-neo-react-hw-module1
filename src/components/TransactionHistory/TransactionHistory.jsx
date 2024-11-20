@@ -3,17 +3,17 @@ import clsx from "clsx";
 
 const TransactionHistory = ({ items }) => {
 	return (
-        <table>
+        <table className={css.tableContainer}>
             <thead>
-                <tr>
+                <tr className={`${css.tableListFlex} ${css.blackBackground}`} >
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Currency</th>
                </tr>
             </thead>
             {items.map((item) => {
-                return <tbody key={item.id}>
-                            <tr>
+                return <tbody className={css.tbodyBackground} key={item.id}>
+                            <tr className={css.tableListFlex}>
                                 <td>{item.type}</td>
                                 <td>{item.amount}</td>
                                 <td>{item.currency}</td>

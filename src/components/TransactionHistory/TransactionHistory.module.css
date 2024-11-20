@@ -1,0 +1,33 @@
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableListFlex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blackBackground {
+  background-color: black;
+  color: white;
+}
+
+.tableListFlex td {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid black;
+  text-transform: capitalize;
+}
+
+.tbodyBackground:nth-child(even) {
+  background: white;
+}
+
+.tbodyBackground:nth-child(odd) {
+  background: lightgray;
+}

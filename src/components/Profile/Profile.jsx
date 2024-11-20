@@ -5,9 +5,9 @@ const Profile = ({ name, tag, location, image, stats }) => {
 	return  <div className={css.profileCard}>
                 <div className={css.profileCardInfo}>
                     <img src={image} alt="User avatar"/>
-                    <p>{name}</p>
-                    <p>{tag}</p>
-                    <p>{location}</p>
+                    <p className={css.boldTitle}>{name}</p>
+                    <p className={`${css.grayTitle} ${css.beforeTag}`}>{tag}</p>
+                    <p className={css.grayTitle}>{location}</p>
                 </div>
                 <ul className={css.profileInfoList}>
                     <li className={css.profileInfoItem}>
