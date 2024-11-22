@@ -1,0 +1,21 @@
+.friendsListItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.friendsListItem p {
+  margin: 0;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
